@@ -8,7 +8,7 @@
             </div>
 
             <div class="col-2">
-                <h4 class="m-0">
+                <h3 class="m-0">
                     <span class="badge" [ngClass]="{
                             'badge-success': getMovieObj.vote_average >= 7,
                             'badge-warning': getMovieObj.vote_average < 7 && getMovieObj.vote_average > 5,
@@ -16,7 +16,7 @@
                         }">
                         {{ getMovieObj.vote_average }}
                     </span>
-                </h4>
+                </h3>
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@
         <figure>
             <img [src]="getMovieObj.poster_path" [alt]="getMovieObj.title">
             <figcaption>
-                <h5>{{ getMovieObj.title || getMovieObj.original_title }}</h5>
+                <h4>{{ getMovieObj.title || getMovieObj.original_title }}</h4>
                 <p>{{ getMovieObj.overview }}</p>
             </figcaption>
         </figure>
