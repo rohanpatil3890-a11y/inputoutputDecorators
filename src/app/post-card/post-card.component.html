@@ -1,0 +1,27 @@
+
+<!-- 
+<div class="card mb-3">
+    <div class="card-hrader">
+       {{getpostobj.title}}
+    </div>
+    <div class="card-body">
+        {{getpostobj.body}}
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <button mat-raised-button color="primary">Edit</button>
+        <button mat-raised-button color="warn">Edit</button>
+    </div>
+</div> -->
+
+
+<mat-card class="example-card h-100">
+  <mat-card-title class="card-title">{{getpostobj.title}}</mat-card-title>
+  <mat-card-content class="card-content">
+    <p>{{getpostobj.body}}</p>
+  </mat-card-content>
+  <mat-divider inset></mat-divider>
+  <mat-card-actions class="d-flex justify-content-between">
+    <button mat-raised-button color="primary">Edit</button>
+    <button mat-raised-button color="warn">Remove</button>
+  </mat-card-actions>
+</mat-card>

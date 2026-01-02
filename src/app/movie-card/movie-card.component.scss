@@ -1,0 +1,46 @@
+
+.movie-card{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.movie-card h2{
+    height:40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 28px;
+    margin:0;
+}
+
+.movie-card figure{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+figure img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+  }
+
+.movie-card figcaption{
+    position:absolute;
+    top:30%;
+    left:0;
+    height: 70%;
+    padding:20px;
+     width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(120px);
+}
+
+.movie-card:is(:hover, :active, :focus) figcaption{
+     transform: translateY(0%);
+    opacity: 1;
+}
+

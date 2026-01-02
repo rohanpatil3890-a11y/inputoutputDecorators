@@ -1,0 +1,38 @@
+<div class="card movie-card text-white mb-3">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-10">
+                <h2 class="m-0">
+                    {{ getMovieObj.title || getMovieObj.original_title }}
+                </h2>
+            </div>
+
+            <div class="col-2">
+                <h4 class="m-0">
+                    <span class="badge" [ngClass]="{
+                            'badge-success': getMovieObj.vote_average >= 7,
+                            'badge-warning': getMovieObj.vote_average < 7 && getMovieObj.vote_average > 5,
+                            'badge-danger': getMovieObj.vote_average <= 5
+                        }">
+                        {{ getMovieObj.vote_average }}
+                    </span>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <figure>
+            <img [src]="getMovieObj.poster_path" [alt]="getMovieObj.title">
+            <figcaption>
+                <h5>{{ getMovieObj.title || getMovieObj.original_title }}</h5>
+                <p>{{ getMovieObj.overview }}</p>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="card-footer d-flex justify-content-between align-items-center">
+        <button mat-raised-button color="primary">Edit</button>
+        <button mat-raised-button color="warn">Remove</button>
+    </div>
+</div>

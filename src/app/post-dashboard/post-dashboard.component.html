@@ -1,0 +1,11 @@
+<div class="container mt-5">
+    <div class="row">
+        <div
+        *ngFor="let postObj of POSTArr"
+        class="col-md-4 mb-4">
+           <app-post-card [getpostobj]="postObj">
+
+           </app-post-card>
+        </div>
+    </div>
+</div>
