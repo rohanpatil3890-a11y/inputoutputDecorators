@@ -14,6 +14,8 @@ import { PostCardComponent } from './post-card/post-card.component';
 import { PostDashboardComponent } from './post-dashboard/post-dashboard.component';
 import { MovieDashboardComponent } from './movie-dashboard/movie-dashboard.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
+import { ProductDashboardComponent } from './product-dashboard/product-dashboard.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MovieCardComponent } from './movie-card/movie-card.component';
     PostCardComponent,
     PostDashboardComponent,
     MovieDashboardComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    ProductDashboardComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
