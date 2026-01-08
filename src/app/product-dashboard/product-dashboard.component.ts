@@ -16,7 +16,9 @@ export class ProductDashboardComponent implements OnInit {
 
   productArr : Array<Iproduct> = mobileProducts;
 
-  
+     trackById(index : number, product : Iproduct){
+       return product.id
+    }
 
 
 

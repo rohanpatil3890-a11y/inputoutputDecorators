@@ -9,11 +9,17 @@ import { Iproduct } from '../shared/model/product';
 })
 export class ProductCardComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  @Input() gemobileData !: Iproduct
+ 
+
+
+  @Input() productObj !: Iproduct
+
+  // @Input() gemobileData !: Iproduct
 
 }

@@ -12,9 +12,11 @@ export class PostCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
- @Input() getpostobj !: Ipost
+
+@Input() cardObj !: Ipost
   
 
 

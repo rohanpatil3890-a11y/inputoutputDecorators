@@ -13,6 +13,9 @@ export class MovieCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input() getMovieObj !: Imovies;
+
+  @Input() movieObj !: Imovies
+
+  // @Input() getMovieObj !: Imovies;
 
 }

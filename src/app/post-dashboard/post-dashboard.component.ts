@@ -14,6 +14,10 @@ export class PostDashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+   trackById(index : number, product : Ipost){
+     return product.id
+  }
+
   POSTArr : Array<Ipost> = POSTArr
 
 }

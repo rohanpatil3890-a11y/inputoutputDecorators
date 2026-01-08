@@ -1,5 +1,29 @@
 <div class="container mt-5">
-    <div class="row">
+  <div class="row">
+    <div
+     *ngFor="let cardObj of POSTArr; trackById : trackById"
+    class="col-md-4">
+        <app-post-card [cardObj]="cardObj">
+
+        </app-post-card>
+    </div>
+  </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="row">
         <div
         *ngFor="let postObj of POSTArr"
         class="col-md-4 mb-4">
@@ -7,5 +31,5 @@
 
            </app-post-card>
         </div>
-    </div>
-</div>
+    </div> -->
+<!-- </div> -->
